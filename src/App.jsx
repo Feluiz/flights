@@ -9,7 +9,7 @@ function App() {
   return (
     <div className='flex justify-center max-auto flex-wrap'>
       <Input />
-      <Button sx={{minWidth: "52.5%"}}> Hello there</Button>
+      <Button sx={{minWidth: "52.5%" }}> Hello there</Button>
     </div>
   )
 }
