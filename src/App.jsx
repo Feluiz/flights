@@ -2,9 +2,32 @@ import { useState } from "react";
 import { Button } from "@mui/material";
 import Input from "./Input";
 import "./App.css";
+import axios from "axios";
+const apiKey = import.meta.env.VITE_API_KEY;
 
 function App() {
   const [count, setCount] = useState(0);
+
+  const searchAirport = async (query) => {
+    try {
+      const response = await axios.get(
+        "https://sky-scrapper.p.rapidapi.com/api/v1/flights/searchAirport",
+        {
+          params: { query, locale: "en-US" },
+          headers: {
+            "x-rapidapi-host": "sky-scrapper.p.rapidapi.com",
+            "X-RapidAPI-Key": apiKey,
+          },
+        }
+      );
+
+      console.log("Airport Results:", response.data);
+      return response.data;
+    } catch (error) {
+      console.error("Error fetching airports:", error);
+      return null;
+    }
+  };
 
   return (
     <div className="flex flex-wrap justify-center">
@@ -18,12 +41,13 @@ function App() {
             color: "white",
             height: "3.5em",
             fontSize: "larger",
-            width:{lg:"76%", md:"74%", sm:"84%", xs:"10%"}
+            width: { lg: "76%", md: "74%", sm: "84%", xs: "10%" },
           }}
+          onClick={() => searchAirport('new')}
         >
           {" "}
           Search Flights
-        </Button>
+        </Button >
       </div>
     </div>
   );

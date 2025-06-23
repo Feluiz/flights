@@ -1,11 +1,6 @@
 import { TextField, Box } from "@mui/material";
 
 const Input = () => {
-  const options = [
-    { label: "The Godfather", id: 1 },
-    { label: "Pulp Fiction", id: 2 },
-  ];
-
   return (
     <>
       <div className="flex flex-wrap justify-evenly items-center">
