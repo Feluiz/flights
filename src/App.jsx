@@ -6,8 +6,11 @@ import axios from "axios";
 const apiKey = import.meta.env.VITE_API_KEY;
 
 function App() {
-  
-
+  const [originAirport, setOriginAirport] = useState(null);
+  const [passengerCount, setPassengerCount] = useState(1);
+  const [destinationAirport, setDestinationAirport] = useState(null);
+  const [departureDate, setDepartureDate] = useState("");
+  const [loading, setLoading] = useState(false);
   const searchAirport = async (query) => {
     try {
       const response = await axios.get(
@@ -29,11 +32,73 @@ function App() {
     }
   };
 
+  const handleSearch = async () => {
+    if (!originAirport?.skyId) {
+      alert("Please select an origin airport");
+      return;
+    }
+
+    setLoading(true);
+    const apiKey = import.meta.env.VITE_API_KEY;
+    const params = {
+      originSkyId: originAirport.skyId,
+      destinationSkyId: destinationAirport?.skyId || undefined,
+      departureDate: departureDate || undefined,
+      adults: passengerCount,
+      // Optional params (uncomment and adjust as needed)
+      // stops: 'direct,1stop',
+      // cabinClass: 'economy',
+      // sort: 'cheapest',
+      // market: 'US', // Fetch from /get-config
+      // locale: 'en-US', // Fetch from /get-config
+      // currency: 'USD', // Fetch from /get-config
+      // carriersIds: '-32672,-31435', // Example
+    };
+
+    try {
+      let response = await axios.get(
+        "https://fly-scraper.p.rapidapi.com/flights/search-one-way",
+        {
+          params,
+          headers: {
+            "x-rapidapi-host": "fly-scraper.p.rapidapi.com",
+            "X-RapidAPI-Key": apiKey,
+          },
+        }
+      );
+
+      while (response.data?.context?.status === "incomplete") {
+        await new Promise((resolve) => setTimeout(resolve, 1000));
+        response = await axios.get(
+          "https://api.example.com/flight/search-incomplete",
+          {
+            params: { ...params, sessionId: response.data.context.sessionId },
+            headers: { Authorization: `Bearer ${apiKey}` },
+          }
+        );
+      }
+
+      console.log("Flight search results:", response.data);
+    } catch (error) {
+      console.error("Flight search error:", error);
+      alert("Failed to fetch flights");
+    } finally {
+      setLoading(false);
+    }
+  };
+
   return (
     <div className="flex flex-wrap justify-center">
       <h1 className="text-6xl my-15">Flight Search</h1>
       <div className="flex justify-center max-auto flex-wrap">
-        <Input />
+        <Input
+          setOriginAirport={setOriginAirport}
+          setDestinationAirport={setDestinationAirport}
+          setDepartureDate={setDepartureDate}
+          setPassengerCount={setPassengerCount}
+          passengerCount={passengerCount}
+          searchAirport={searchAirport}
+        />
         <Button
           sx={{
             minWidth: "56.5%",
@@ -43,7 +108,7 @@ function App() {
             fontSize: "larger",
             width: { lg: "76%", md: "70%", sm: "93%", xs: "10%" },
           }}
-          onClick={() => searchAirport("new")}
+          onClick={handleSearch}
         >
           {" "}
           Search Flights

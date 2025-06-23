@@ -9,22 +9,6 @@ const airports= [
         "skyId": "AAA"
     },
     {
-        "iata": "AAB",
-        "icao": "YARY",
-        "name": "Arrabury Airport",
-        "location": "Arrabury, Queensland, Australia",
-        "time": "UTC+10:00",
-        "id": null
-    },
-    {
-        "iata": "AAC",
-        "icao": "HEAR",
-        "name": "El Arish International Airport",
-        "location": "El Arish, Egypt",
-        "time": "UTC+02:00",
-        "id": null
-    },
-    {
         "iata": "AAD",
         "icao": "HCAD",
         "name": "Adado Airport",
@@ -41,46 +25,6 @@ const airports= [
         "time": "UTC+01:00",
         "id": "eyJlIjoiMTI4NjY3NTkzIiwicyI6IkFBRSIsImgiOiIyNzUzNjQwOSIsInQiOiJBSVJQT1JUIn0=",
         "skyId": "AAE"
-    },
-    {
-        "iata": "AAF",
-        "icao": "KAAF",
-        "name": "Apalachicola Regional Airport",
-        "location": "Apalachicola, Florida, United States",
-        "time": "UTC−05:00",
-        "id": null
-    },
-    {
-        "iata": "AAG",
-        "icao": "SSYA",
-        "name": "Arapoti Airport",
-        "location": "Arapoti, Paraná, Brazil",
-        "time": "UTC−03:00",
-        "id": null
-    },
-    {
-        "iata": "AAH",
-        "icao": "EDKA",
-        "name": "Merzbrück Airport",
-        "location": "Aachen, North Rhine-Westphalia, Germany",
-        "time": "UTC+01:00",
-        "id": null
-    },
-    {
-        "iata": "AAI",
-        "icao": "SWRA",
-        "name": "Arraias Airport",
-        "location": "Arraias, Tocantins, Brazil",
-        "time": "UTC−03:00",
-        "id": null
-    },
-    {
-        "iata": "AAJ",
-        "icao": "SMCA",
-        "name": "Cayana Airstrip",
-        "location": "Awaradam, Suriname",
-        "time": "UTC−03:00",
-        "id": null
     },
     {
         "iata": "AAK",
@@ -119,14 +63,6 @@ const airports= [
         "skyId": "AAN"
     },
     {
-        "iata": "AAO",
-        "icao": "SVAN",
-        "name": "Anaco Airport",
-        "location": "Anaco, Venezuela",
-        "time": "UTC−04:00",
-        "id": null
-    },
-    {
         "iata": "AAP",
         "icao": "WALS",
         "name": "Aji Pangeran Tumenggung Pranoto International Airport",
@@ -154,14 +90,6 @@ const airports= [
         "skyId": "AAR"
     },
     {
-        "iata": "AAS",
-        "icao": "",
-        "name": "Apalapsili Airport",
-        "location": "Apalapsili, Indonesia",
-        "time": "UTC+09:00",
-        "id": null
-    },
-    {
         "iata": "AAT",
         "icao": "ZWAT",
         "name": "Altay Airport",
@@ -169,22 +97,6 @@ const airports= [
         "time": "UTC+08:00",
         "id": "eyJlIjoiMTI4NjY4MjQyIiwicyI6IkFBVCIsImgiOiIyNzU0NzQ2NSIsInQiOiJBSVJQT1JUIn0=",
         "skyId": "AAT"
-    },
-    {
-        "iata": "AAU",
-        "icao": "NSAU",
-        "name": "Asau Airport",
-        "location": "Asau, Savai'i Island, Samoa",
-        "time": "UTC+13:00",
-        "id": null
-    },
-    {
-        "iata": "AAV",
-        "icao": "RPMA",
-        "name": "Allah Valley Airport",
-        "location": "Surallah, Philippines",
-        "time": "UTC+08:00",
-        "id": null
     },
     {
         "iata": "AAX",
@@ -232,14 +144,6 @@ const airports= [
         "skyId": "ABB"
     },
     {
-        "iata": "ABC",
-        "icao": "LEAB",
-        "name": "Albacete Airport",
-        "location": "Albacete, Castilla-La Mancha, Spain",
-        "time": "UTC+01:00",
-        "id": null
-    },
-    {
         "iata": "ABD",
         "icao": "OIAA",
         "name": "Abadan International Airport",
@@ -265,22 +169,6 @@ const airports= [
         "time": "UTC+12:00",
         "id": "eyJlIjoiMTI5MDUyOTc4IiwicyI6IkFCRiIsImgiOiI4MTk3NjA0NiIsInQiOiJBSVJQT1JUIn0=",
         "skyId": "ABF"
-    },
-    {
-        "iata": "ABG",
-        "icao": "YABI",
-        "name": "Abingdon Airport",
-        "location": "Abingdon Downs, Queensland, Australia",
-        "time": "UTC+10:00",
-        "id": null
-    },
-    {
-        "iata": "ABH",
-        "icao": "YAPH",
-        "name": "Alpha Airport",
-        "location": "Alpha, Queensland, Australia",
-        "time": "UTC+10:00",
-        "id": null
     },
     {
         "iata": "ABI",
@@ -326,30 +214,6 @@ const airports= [
         "time": "UTC+10:00",
         "id": "eyJlIjoiMTI4NjY4MTk2IiwicyI6IkFCTSIsImgiOiIyNzUzNjQyNiIsInQiOiJBSVJQT1JUIn0=",
         "skyId": "ABM"
-    },
-    {
-        "iata": "ABN",
-        "icao": "SMBN",
-        "name": "Albina Airstrip",
-        "location": "Albina, Suriname",
-        "time": "UTC−03:00",
-        "id": null
-    },
-    {
-        "iata": "ABO",
-        "icao": "DIAO",
-        "name": "Aboisso Airport",
-        "location": "Aboisso, Côte d'Ivoire",
-        "time": "UTC+00:00",
-        "id": null
-    },
-    {
-        "iata": "ABP",
-        "icao": "",
-        "name": "Atkamba Airport",
-        "location": "Atkamba, Papua New Guinea",
-        "time": "UTC+10:00",
-        "id": null
     },
     {
         "iata": "ABQ",
@@ -406,14 +270,6 @@ const airports= [
         "skyId": "ABV"
     },
     {
-        "iata": "ABW",
-        "icao": "",
-        "name": "Abau Airport",
-        "location": "Abau, Papua New Guinea",
-        "time": "UTC+10:00",
-        "id": null
-    },
-    {
         "iata": "ABX",
         "icao": "YMAY",
         "name": "Albury Airport",
@@ -450,14 +306,6 @@ const airports= [
         "skyId": "ACA"
     },
     {
-        "iata": "ACB",
-        "icao": "KACB",
-        "name": "Antrim County Airport",
-        "location": "Bellaire, Michigan, United States",
-        "time": "UTC−05:00",
-        "id": null
-    },
-    {
         "iata": "ACC",
         "icao": "DGAA",
         "name": "Kotoka International Airport",
@@ -465,14 +313,6 @@ const airports= [
         "time": "UTC+00:00",
         "id": "eyJlIjoiMTI4NjY3NDIxIiwicyI6IkFDQyIsImgiOiIyNzUzNjIyOSIsInQiOiJBSVJQT1JUIn0=",
         "skyId": "ACC"
-    },
-    {
-        "iata": "ACD",
-        "icao": "SKAD",
-        "name": "Alcides Fernández Airport",
-        "location": "Acandí, Colombia",
-        "time": "UTC−05:00",
-        "id": null
     },
     {
         "iata": "ACE",
@@ -502,14 +342,6 @@ const airports= [
         "skyId": "ACI"
     },
     {
-        "iata": "ACJ",
-        "icao": "VCCA",
-        "name": "Anuradhapura Airport",
-        "location": "Anuradhapura, Sri Lanka",
-        "time": "UTC+05:30",
-        "id": null
-    },
-    {
         "iata": "ACK",
         "icao": "KACK",
         "name": "Nantucket Memorial Airport",
@@ -517,30 +349,6 @@ const airports= [
         "time": "UTC−05:00",
         "id": "eyJlIjoiOTU2NzQwNjgiLCJzIjoiQUNLIiwiaCI6IjM1MzQzMzI5IiwidCI6IkFJUlBPUlQifQ==",
         "skyId": "ACK"
-    },
-    {
-        "iata": "ACL",
-        "icao": "",
-        "name": "Aguaclara Airport",
-        "location": "Aguaclara, Colombia",
-        "time": "UTC−05:00",
-        "id": null
-    },
-    {
-        "iata": "ACM",
-        "icao": "",
-        "name": "Arica Airport",
-        "location": "Arica, Colombia",
-        "time": "UTC−05:00",
-        "id": null
-    },
-    {
-        "iata": "ACN",
-        "icao": "MMCC",
-        "name": "Ciudad Acuña International Airport",
-        "location": "Ciudad Acuña, Coahuila, Mexico",
-        "time": "UTC−06:00",
-        "id": null
     },
     {
         "iata": "ACP",
@@ -552,22 +360,6 @@ const airports= [
         "skyId": "ACP"
     },
     {
-        "iata": "ACR",
-        "icao": "SKAC",
-        "name": "Araracuara Airport",
-        "location": "Araracuara, Colombia",
-        "time": "UTC−05:00",
-        "id": null
-    },
-    {
-        "iata": "ACS",
-        "icao": "UNKS",
-        "name": "Achinsk Airport",
-        "location": "Achinsk, Krasnoyarsk Krai, Russia",
-        "time": "UTC+07:00",
-        "id": null
-    },
-    {
         "iata": "ACT",
         "icao": "KACT",
         "name": "Waco Regional Airport",
@@ -575,14 +367,6 @@ const airports= [
         "time": "UTC−06:00",
         "id": "eyJlIjoiOTU2NzQxODMiLCJzIjoiQUNUIiwiaCI6IjI3NTM2NDM4IiwidCI6IkFJUlBPUlQifQ==",
         "skyId": "ACT"
-    },
-    {
-        "iata": "ACU",
-        "icao": "",
-        "name": "Achutupo Airport",
-        "location": "Achutupo, Panama",
-        "time": "UTC−05:00",
-        "id": null
     },
     {
         "iata": "ACV",
@@ -639,14 +423,6 @@ const airports= [
         "skyId": "ADB"
     },
     {
-        "iata": "ADC",
-        "icao": "AYAN",
-        "name": "Andakombe Airport",
-        "location": "Andakombe, Papua New Guinea",
-        "time": "UTC+10:00",
-        "id": null
-    },
-    {
         "iata": "ADD",
         "icao": "HAAB",
         "name": "Bole International Airport",
@@ -672,30 +448,6 @@ const airports= [
         "time": "UTC+03:00",
         "id": "eyJlIjoiMTI4NjY4MzEzIiwicyI6IkFERiIsImgiOiIyNzUzNjQ0NyIsInQiOiJBSVJQT1JUIn0=",
         "skyId": "ADF"
-    },
-    {
-        "iata": "ADG",
-        "icao": "KADG",
-        "name": "Lenawee County Airport",
-        "location": "Adrian, Michigan, United States",
-        "time": "UTC−05:00",
-        "id": null
-    },
-    {
-        "iata": "ADH",
-        "icao": "UEEA",
-        "name": "Aldan Airport",
-        "location": "Aldan, Yakutia, Russia",
-        "time": "UTC+09:00",
-        "id": null
-    },
-    {
-        "iata": "ADI",
-        "icao": "FYAR",
-        "name": "Arandis Airport",
-        "location": "Arandis, Namibia",
-        "time": "UTC+01:00",
-        "id": null
     },
     {
         "iata": "ADJ",
@@ -725,38 +477,6 @@ const airports= [
         "skyId": "ADL"
     },
     {
-        "iata": "ADM",
-        "icao": "KADM",
-        "name": "Ardmore Municipal Airport",
-        "location": "Ardmore, Oklahoma, United States",
-        "time": "UTC−06:00",
-        "id": null
-    },
-    {
-        "iata": "ADN",
-        "icao": "SKAN",
-        "name": "Andes Airport",
-        "location": "Andes, Colombia",
-        "time": "UTC−05:00",
-        "id": null
-    },
-    {
-        "iata": "ADO",
-        "icao": "YAMK",
-        "name": "Andamooka Airport",
-        "location": "Andamooka, South Australia, Australia",
-        "time": "UTC+09:30",
-        "id": null
-    },
-    {
-        "iata": "ADP",
-        "icao": "VCCG",
-        "name": "Ampara Airport",
-        "location": "Ampara, Sri Lanka",
-        "time": "UTC+05:30",
-        "id": null
-    },
-    {
         "iata": "ADQ",
         "icao": "PADQ",
         "name": "Kodiak Airport",
@@ -766,30 +486,6 @@ const airports= [
         "skyId": "ADQ"
     },
     {
-        "iata": "ADR",
-        "icao": "KPHH",
-        "name": "Robert F. Swinnie Airport (FAA: PHH)",
-        "location": "Andrews, South Carolina, United States",
-        "time": "UTC−05:00",
-        "id": null
-    },
-    {
-        "iata": "ADS",
-        "icao": "KADS",
-        "name": "Addison Airport",
-        "location": "Dallas, Texas, United States",
-        "time": "UTC−06:00",
-        "id": null
-    },
-    {
-        "iata": "ADT",
-        "icao": "KADH",
-        "name": "Ada Municipal Airport (FAA: ADH)",
-        "location": "Ada, Oklahoma, United States",
-        "time": "UTC−06:00",
-        "id": null
-    },
-    {
         "iata": "ADU",
         "icao": "OITL",
         "name": "Ardabil Airport",
@@ -797,38 +493,6 @@ const airports= [
         "time": "UTC+03:30",
         "id": "eyJlIjoiMTI4NjY4MjA1IiwicyI6IkFEVSIsImgiOiIyNzUzNjQ1OSIsInQiOiJBSVJQT1JUIn0=",
         "skyId": "ADU"
-    },
-    {
-        "iata": "ADV",
-        "icao": "",
-        "name": "Ed Daein Airport",
-        "location": "Ed Daein, Sudan",
-        "time": "UTC+03:00",
-        "id": null
-    },
-    {
-        "iata": "ADW",
-        "icao": "KADW",
-        "name": "Andrews Field (Andrews Air Force Base)",
-        "location": "Camp Springs, Maryland, United States",
-        "time": "UTC−05:00",
-        "id": null
-    },
-    {
-        "iata": "ADX",
-        "icao": "EGQL",
-        "name": "Leuchars Station (formerly RAF Leuchars)",
-        "location": "St Andrews, Scotland, United Kingdom",
-        "time": "UTC+00:00",
-        "id": null
-    },
-    {
-        "iata": "ADY",
-        "icao": "FAAL",
-        "name": "Alldays Airport",
-        "location": "Alldays, South Africa",
-        "time": "UTC+02:00",
-        "id": null
     },
     {
         "iata": "ADZ",
@@ -858,46 +522,6 @@ const airports= [
         "skyId": "AEB"
     },
     {
-        "iata": "AEE",
-        "icao": "",
-        "name": "Adareil Airport[1]",
-        "location": "Adareil, South Sudan",
-        "time": "UTC+03:00",
-        "id": null
-    },
-    {
-        "iata": "AEG",
-        "icao": "WIME",
-        "name": "Aek Godang Airport",
-        "location": "Padang Sidempuan, Indonesia",
-        "time": "UTC+07:00",
-        "id": null
-    },
-    {
-        "iata": "AEH",
-        "icao": "FTTC",
-        "name": "Abéché Airport",
-        "location": "Abéché, Chad",
-        "time": "UTC+01:00",
-        "id": null
-    },
-    {
-        "iata": "AEK",
-        "icao": "AYAX",
-        "name": "Aseki Airport",
-        "location": "Aseki, Papua New Guinea",
-        "time": "UTC+10:00",
-        "id": null
-    },
-    {
-        "iata": "AEL",
-        "icao": "KAEL",
-        "name": "Albert Lea Municipal Airport",
-        "location": "Albert Lea, Minnesota, United States",
-        "time": "UTC−06:00",
-        "id": null
-    },
-    {
         "iata": "AEM",
         "icao": "UHTG",
         "name": "Amgu Airport",
@@ -907,14 +531,6 @@ const airports= [
         "skyId": "AEM"
     },
     {
-        "iata": "AEO",
-        "icao": "GQNA",
-        "name": "Aioun el Atrouss Airport",
-        "location": "Aioun el Atrouss, Mauritania",
-        "time": "UTC+00:00",
-        "id": null
-    },
-    {
         "iata": "AEP",
         "icao": "SABE",
         "name": "Jorge Newbery Airpark",
@@ -922,14 +538,6 @@ const airports= [
         "time": "UTC−03:00",
         "id": "eyJlIjoiMTI4NjY4MTkwIiwicyI6IkFFUCIsImgiOiIyNzUzNjQ2NSIsInQiOiJBSVJQT1JUIn0=",
         "skyId": "AEP"
-    },
-    {
-        "iata": "AEQ",
-        "icao": "",
-        "name": "Ar Horqin Airport",
-        "location": "Ar Horqin Banner, China",
-        "time": "UTC+08:00",
-        "id": null
     },
     {
         "iata": "AER",
@@ -995,38 +603,6 @@ const airports= [
         "skyId": "AFA"
     },
     {
-        "iata": "AFD",
-        "icao": "FAPA",
-        "name": "Port Alfred Airport",
-        "location": "Port Alfred, South Africa",
-        "time": "UTC+02:00",
-        "id": null
-    },
-    {
-        "iata": "AFF",
-        "icao": "KAFF",
-        "name": "United States Air Force Academy Airfield",
-        "location": "Colorado Springs, Colorado, United States",
-        "time": "UTC−07:00",
-        "id": null
-    },
-    {
-        "iata": "AFI",
-        "icao": "SKAM",
-        "name": "Amalfi Airport",
-        "location": "Amalfi, Colombia",
-        "time": "UTC−05:00",
-        "id": null
-    },
-    {
-        "iata": "AFK",
-        "icao": "",
-        "name": "Kondavattavan Tank Seaplane Base[1]",
-        "location": "Ampara, Sri Lanka",
-        "time": "UTC+05:30",
-        "id": null
-    },
-    {
         "iata": "AFL",
         "icao": "SBAT",
         "name": "Alta Floresta Airport",
@@ -1034,62 +610,6 @@ const airports= [
         "time": "UTC−04:00",
         "id": "eyJlIjoiMTI4NjY4MjEwIiwicyI6IkFGTCIsImgiOiIyNzU0MDU4NiIsInQiOiJBSVJQT1JUIn0=",
         "skyId": "AFL"
-    },
-    {
-        "iata": "AFN",
-        "icao": "KAFN",
-        "name": "Jaffrey Airport–Silver Ranch",
-        "location": "Jaffrey, New Hampshire, United States",
-        "time": "UTC−05:00",
-        "id": null
-    },
-    {
-        "iata": "AFO",
-        "icao": "KAFO",
-        "name": "Afton Municipal Airport",
-        "location": "Afton, Wyoming, United States",
-        "time": "UTC−07:00",
-        "id": null
-    },
-    {
-        "iata": "AFR",
-        "icao": "AYAF",
-        "name": "Afore Airstrip",
-        "location": "Afore, Papua New Guinea",
-        "time": "UTC+10:00",
-        "id": null
-    },
-    {
-        "iata": "AFS",
-        "icao": "UTSN",
-        "name": "Zarafshan Airport",
-        "location": "Zarafshan, Uzbekistan",
-        "time": "UTC+05:00",
-        "id": null
-    },
-    {
-        "iata": "AFT",
-        "icao": "AGAF",
-        "name": "Afutara Airport",
-        "location": "Afutara, Malaita, Solomon Islands",
-        "time": "UTC+11:00",
-        "id": null
-    },
-    {
-        "iata": "AFW",
-        "icao": "KAFW",
-        "name": "Fort Worth Alliance Airport",
-        "location": "Fort Worth, Texas, United States",
-        "time": "UTC−06:00",
-        "id": null
-    },
-    {
-        "iata": "AFY",
-        "icao": "LTAH",
-        "name": "Afyon Airport",
-        "location": "Afyon, Turkey",
-        "time": "UTC+03:00",
-        "id": null
     },
     {
         "iata": "AFZ",
@@ -1110,14 +630,6 @@ const airports= [
         "skyId": "AGA"
     },
     {
-        "iata": "AGB",
-        "icao": "EDMA",
-        "name": "Augsburg Airport",
-        "location": "Augsburg, Bavaria, Germany",
-        "time": "UTC+01:00",
-        "id": null
-    },
-    {
         "iata": "AGC",
         "icao": "KAGC",
         "name": "Allegheny County Airport",
@@ -1125,38 +637,6 @@ const airports= [
         "time": "UTC−05:00",
         "id": "eyJlIjoiMTI5MDU1ODc4IiwicyI6IkFHQyIsImgiOiIyNzUzNjQ5MCIsInQiOiJBSVJQT1JUIn0=",
         "skyId": "AGC"
-    },
-    {
-        "iata": "AGD",
-        "icao": "WASG",
-        "name": "Anggi Airport",
-        "location": "Anggi, Indonesia",
-        "time": "UTC+09:00",
-        "id": null
-    },
-    {
-        "iata": "AGE",
-        "icao": "EDWG",
-        "name": "Wangerooge Airfield",
-        "location": "Wangerooge, Lower Saxony, Germany",
-        "time": "UTC+01:00",
-        "id": null
-    },
-    {
-        "iata": "AGF",
-        "icao": "LFBA",
-        "name": "Agen La Garenne Airport",
-        "location": "Agen, Aquitaine, France",
-        "time": "UTC+01:00",
-        "id": null
-    },
-    {
-        "iata": "AGG",
-        "icao": "",
-        "name": "Angoram Airport",
-        "location": "Angoram, Papua New Guinea",
-        "time": "UTC+10:00",
-        "id": null
     },
     {
         "iata": "AGH",
@@ -1168,38 +648,6 @@ const airports= [
         "skyId": "AGH"
     },
     {
-        "iata": "AGI",
-        "icao": "SMWA",
-        "name": "Wageningen Airstrip",
-        "location": "Wageningen, Suriname",
-        "time": "UTC−03:00",
-        "id": null
-    },
-    {
-        "iata": "AGJ",
-        "icao": "RORA",
-        "name": "Aguni Airport",
-        "location": "Aguni, Okinawa, Japan",
-        "time": "UTC+09:00",
-        "id": null
-    },
-    {
-        "iata": "AGK",
-        "icao": "",
-        "name": "Kagua Airport",
-        "location": "Kagua, Papua New Guinea",
-        "time": "UTC+10:00",
-        "id": null
-    },
-    {
-        "iata": "AGL",
-        "icao": "AYWG",
-        "name": "Wanigela Airport",
-        "location": "Wanigela, Papua New Guinea",
-        "time": "UTC+10:00",
-        "id": null
-    },
-    {
         "iata": "AGN",
         "icao": "PAGN",
         "name": "Angoon Seaplane Base",
@@ -1209,14 +657,6 @@ const airports= [
         "skyId": "AGN"
     },
     {
-        "iata": "AGO",
-        "icao": "KAGO",
-        "name": "Magnolia Municipal Airport",
-        "location": "Magnolia, Arkansas, United States",
-        "time": "UTC−06:00",
-        "id": null
-    },
-    {
         "iata": "AGP",
         "icao": "LEMG",
         "name": "Málaga Airport",
@@ -1224,14 +664,6 @@ const airports= [
         "time": "UTC+01:00",
         "id": "eyJlIjoiOTU1NjUwOTUiLCJzIjoiQUdQIiwiaCI6IjI3NTQ3NDg0IiwidCI6IkFJUlBPUlQifQ==",
         "skyId": "AGP"
-    },
-    {
-        "iata": "AGQ",
-        "icao": "LGAG",
-        "name": "Agrinion Airport",
-        "location": "Agrinion, Greece",
-        "time": "UTC+02:00",
-        "id": null
     },
     {
         "iata": "AGR",
@@ -1279,14 +711,6 @@ const airports= [
         "skyId": "AGV"
     },
     {
-        "iata": "AGW",
-        "icao": "",
-        "name": "Agnew Airport",
-        "location": "Agnew, Queensland, Australia",
-        "time": "UTC+10:00",
-        "id": null
-    },
-    {
         "iata": "AGX",
         "icao": "VOAT",
         "name": "Agatti Aerodrome",
@@ -1294,14 +718,6 @@ const airports= [
         "time": "UTC+05:30",
         "id": "eyJlIjoiMTI4NjY4NDcxIiwicyI6IkFHWCIsImgiOiI4MTk3NTUzMiIsInQiOiJBSVJQT1JUIn0=",
         "skyId": "AGX"
-    },
-    {
-        "iata": "AGZ",
-        "icao": "FAAG",
-        "name": "Aggeneys Airport",
-        "location": "Aggeneys, South Africa",
-        "time": "UTC+02:00",
-        "id": null
     },
     {
         "iata": "AHB",
@@ -1313,22 +729,6 @@ const airports= [
         "skyId": "AHB"
     },
     {
-        "iata": "AHC",
-        "icao": "KAHC",
-        "name": "Amedee Army Airfield",
-        "location": "Herlong, California, United States",
-        "time": "UTC−08:00",
-        "id": null
-    },
-    {
-        "iata": "AHD",
-        "icao": "",
-        "name": "Ardmore Downtown Executive Airport (FAA: 1F0)",
-        "location": "Ardmore, Oklahoma, United States",
-        "time": "UTC−06:00",
-        "id": null
-    },
-    {
         "iata": "AHE",
         "icao": "NTHE",
         "name": "Ahe Airport",
@@ -1338,30 +738,6 @@ const airports= [
         "skyId": "AHE"
     },
     {
-        "iata": "AHF",
-        "icao": "",
-        "name": "Arapahoe Municipal Airport (FAA: 37V)",
-        "location": "Arapahoe, Nebraska, United States",
-        "time": "UTC−06:00",
-        "id": null
-    },
-    {
-        "iata": "AHH",
-        "icao": "KAHH",
-        "name": "Amery Municipal Airport",
-        "location": "Amery, Wisconsin, United States",
-        "time": "UTC−06:00",
-        "id": null
-    },
-    {
-        "iata": "AHI",
-        "icao": "WAPA",
-        "name": "Amahai Airport",
-        "location": "Amahai, Indonesia",
-        "time": "UTC+09:00",
-        "id": null
-    },
-    {
         "iata": "AHJ",
         "icao": "ZUHY",
         "name": "Hongyuan Airport",
@@ -1369,22 +745,6 @@ const airports= [
         "time": "UTC+08:00",
         "id": "eyJlIjoiMTQwMDAwNTI2IiwicyI6IkFISiIsImgiOiI0NTY5MzI4OCIsInQiOiJBSVJQT1JUIn0=",
         "skyId": "AHJ"
-    },
-    {
-        "iata": "AHL",
-        "icao": "SYAH",
-        "name": "Aishalton Airport",
-        "location": "Aishalton, Guyana",
-        "time": "UTC−04:00",
-        "id": null
-    },
-    {
-        "iata": "AHM",
-        "icao": "",
-        "name": "Ashland Municipal Airport[1] (FAA: S03)",
-        "location": "Ashland, Oregon, United States",
-        "time": "UTC−08:00",
-        "id": null
     },
     {
         "iata": "AHN",
@@ -1405,14 +765,6 @@ const airports= [
         "skyId": "AHO"
     },
     {
-        "iata": "AHS",
-        "icao": "MHAH",
-        "name": "Ahuas Airport",
-        "location": "Ahuas, Honduras",
-        "time": "UTC−06:00",
-        "id": null
-    },
-    {
         "iata": "AHU",
         "icao": "GMTA",
         "name": "Cherif Al Idrissi Airport",
@@ -1420,30 +772,6 @@ const airports= [
         "time": "UTC+00:00",
         "id": "eyJlIjoiMTI4NjY4MDQ2IiwicyI6IkFIVSIsImgiOiIyNzUzNjUwNiIsInQiOiJBSVJQT1JUIn0=",
         "skyId": "AHU"
-    },
-    {
-        "iata": "AHW",
-        "icao": "",
-        "name": "Saih Rawl Airport[1]",
-        "location": "Saih Rawl, Oman",
-        "time": "UTC+04:00",
-        "id": null
-    },
-    {
-        "iata": "AHY",
-        "icao": "",
-        "name": "Ambatolahy Airport",
-        "location": "Ambatolahy, Madagascar",
-        "time": "UTC+03:00",
-        "id": null
-    },
-    {
-        "iata": "AHZ",
-        "icao": "LFHU",
-        "name": "Alpe d'Huez Airport",
-        "location": "Alpe d'Huez, Rhône-Alpes, France",
-        "time": "UTC+01:00",
-        "id": null
     },
     {
         "iata": "AIA",
@@ -1464,70 +792,6 @@ const airports= [
         "skyId": "AIC"
     },
     {
-        "iata": "AID",
-        "icao": "KAID",
-        "name": "Anderson Municipal Airport (Darlington Field)",
-        "location": "Anderson, Indiana, United States",
-        "time": "UTC−05:00",
-        "id": null
-    },
-    {
-        "iata": "AIE",
-        "icao": "AYAO",
-        "name": "Aiome Airport",
-        "location": "Aiome, Papua New Guinea",
-        "time": "UTC+10:00",
-        "id": null
-    },
-    {
-        "iata": "AIF",
-        "icao": "SNAX",
-        "name": "Assis Airport (former ICAO: SBAS)",
-        "location": "Assis, São Paulo, Brazil",
-        "time": "UTC−03:00",
-        "id": null
-    },
-    {
-        "iata": "AIG",
-        "icao": "FEFY",
-        "name": "Yalinga Airport",
-        "location": "Yalinga, Central African Republic",
-        "time": "UTC+01:00",
-        "id": null
-    },
-    {
-        "iata": "AIH",
-        "icao": "AYAK",
-        "name": "Aiambak Airport",
-        "location": "Aiambak, Papua New Guinea",
-        "time": "UTC+10:00",
-        "id": null
-    },
-    {
-        "iata": "AII",
-        "icao": "HDAS",
-        "name": "Ali-Sabieh Airport",
-        "location": "Ali Sabieh, Djibouti",
-        "time": "UTC+03:00",
-        "id": null
-    },
-    {
-        "iata": "AIK",
-        "icao": "KAIK",
-        "name": "Aiken Municipal Airport",
-        "location": "Aiken, South Carolina, United States",
-        "time": "UTC−05:00",
-        "id": null
-    },
-    {
-        "iata": "AIL",
-        "icao": "",
-        "name": "Ailigandí Airport",
-        "location": "Ailigandí, Panama",
-        "time": "UTC−05:00",
-        "id": null
-    },
-    {
         "iata": "AIM",
         "icao": "",
         "name": "Ailuk Airport",
@@ -1544,14 +808,6 @@ const airports= [
         "time": "UTC−09:00",
         "id": "eyJlIjoiMTI4NjY3NTg5IiwicyI6IkFJTiIsImgiOiIyNzUzNjUxMCIsInQiOiJBSVJQT1JUIn0=",
         "skyId": "AIN"
-    },
-    {
-        "iata": "AIO",
-        "icao": "KAIO",
-        "name": "Atlantic Municipal Airport",
-        "location": "Atlantic, Iowa, United States",
-        "time": "UTC−06:00",
-        "id": null
     },
     {
         "iata": "AIP",
@@ -1599,30 +855,6 @@ const airports= [
         "skyId": "AIU"
     },
     {
-        "iata": "AIV",
-        "icao": "KAIV",
-        "name": "George Downer Airport",
-        "location": "Aliceville, Alabama, United States",
-        "time": "UTC−06:00",
-        "id": null
-    },
-    {
-        "iata": "AIW",
-        "icao": "",
-        "name": "Ai-Ais Airport",
-        "location": "Ai-Ais, Namibia",
-        "time": "UTC+02:00",
-        "id": null
-    },
-    {
-        "iata": "AIZ",
-        "icao": "KAIZ",
-        "name": "Lee C. Fine Memorial Airport",
-        "location": "Lake Ozark, Missouri, United States",
-        "time": "UTC−06:00",
-        "id": null
-    },
-    {
         "iata": "AJA",
         "icao": "LFKJ",
         "name": "Ajaccio Napoleon Bonaparte Airport",
@@ -1650,22 +882,6 @@ const airports= [
         "skyId": "AJI"
     },
     {
-        "iata": "AJJ",
-        "icao": "GQNJ",
-        "name": "Akjoujt Airport",
-        "location": "Akjoujt, Mauritania",
-        "time": "UTC+00:00",
-        "id": null
-    },
-    {
-        "iata": "AJK",
-        "icao": "OIHR",
-        "name": "Arak Airport[1]",
-        "location": "Arak, Iran",
-        "time": "UTC+03:30",
-        "id": null
-    },
-    {
         "iata": "AJL",
         "icao": "VELP[2]",
         "name": "Lengpui Airport",
@@ -1691,14 +907,6 @@ const airports= [
         "time": "UTC+01:00",
         "id": "eyJlIjoiOTU2NzQ0MDEiLCJzIjoiQUpSIiwiaCI6IjI3NTM2NTE2IiwidCI6IkFJUlBPUlQifQ==",
         "skyId": "AJR"
-    },
-    {
-        "iata": "AJS",
-        "icao": "MX86",
-        "name": "Punta Abreojos Airstrip",
-        "location": "Punta Abreojos, Baja California Sur, Mexico",
-        "time": "UTC−07:00",
-        "id": null
     },
     {
         "iata": "AJU",
@@ -1737,54 +945,6 @@ const airports= [
         "skyId": "AKB"
     },
     {
-        "iata": "AKC",
-        "icao": "KAKR",
-        "name": "Akron Fulton International Airport (FAA: AKR)",
-        "location": "Akron, Ohio, United States",
-        "time": "UTC−05:00",
-        "id": null
-    },
-    {
-        "iata": "AKD",
-        "icao": "VAAK",
-        "name": "Akola Airport",
-        "location": "Akola, Maharashtra, India",
-        "time": "UTC+05:30",
-        "id": null
-    },
-    {
-        "iata": "AKE",
-        "icao": "FOGA",
-        "name": "Akieni Airport",
-        "location": "Akiéni, Gabon",
-        "time": "UTC+01:00",
-        "id": null
-    },
-    {
-        "iata": "AKF",
-        "icao": "HLKF",
-        "name": "Kufra Airport",
-        "location": "Kufra, Libya",
-        "time": "UTC+02:00",
-        "id": null
-    },
-    {
-        "iata": "AKG",
-        "icao": "AYGU",
-        "name": "Anguganak Airport",
-        "location": "Anguganak, Papua New Guinea",
-        "time": "UTC+10:00",
-        "id": null
-    },
-    {
-        "iata": "AKH",
-        "icao": "OEPS",
-        "name": "Prince Sultan Air Base",
-        "location": "Al-Kharj, Saudi Arabia",
-        "time": "UTC+03:00",
-        "id": null
-    },
-    {
         "iata": "AKI",
         "icao": "PFAK",
         "name": "Akiak Airport",
@@ -1821,14 +981,6 @@ const airports= [
         "skyId": "AKL"
     },
     {
-        "iata": "AKM",
-        "icao": "",
-        "name": "Zakouma Airport",
-        "location": "Zakouma National Park, Chad",
-        "time": "UTC+01:00",
-        "id": null
-    },
-    {
         "iata": "AKN",
         "icao": "PAKN",
         "name": "King Salmon Airport",
@@ -1838,14 +990,6 @@ const airports= [
         "skyId": "AKN"
     },
     {
-        "iata": "AKO",
-        "icao": "KAKO",
-        "name": "Colorado Plains Regional Airport",
-        "location": "Akron, Colorado, United States",
-        "time": "UTC−07:00",
-        "id": null
-    },
-    {
         "iata": "AKP",
         "icao": "PAKP",
         "name": "Anaktuvuk Pass Airport",
@@ -1853,14 +997,6 @@ const airports= [
         "time": "UTC−09:00",
         "id": "eyJlIjoiMTI4NjY4MzEwIiwicyI6IkFLUCIsImgiOiIyNzUzNjUyOSIsInQiOiJBSVJQT1JUIn0=",
         "skyId": "AKP"
-    },
-    {
-        "iata": "AKQ",
-        "icao": "WIAG",
-        "name": "Gunung Batin Airport",
-        "location": "Astraksetra, Indonesia",
-        "time": "UTC+07:00",
-        "id": null
     },
     {
         "iata": "AKR",
@@ -1881,14 +1017,6 @@ const airports= [
         "skyId": "AKS"
     },
     {
-        "iata": "AKT",
-        "icao": "LCRA",
-        "name": "RAF Akrotiri",
-        "location": "Akrotiri, United Kingdom",
-        "time": "UTC+02:00",
-        "id": null
-    },
-    {
         "iata": "AKU",
         "icao": "ZWAK",
         "name": "Aksu Airport",
@@ -1905,14 +1033,6 @@ const airports= [
         "time": "UTC−05:00",
         "id": "eyJlIjoiMTI4NjY4MjIzIiwicyI6IkFLViIsImgiOiIyNzUzNjUzNCIsInQiOiJBSVJQT1JUIn0=",
         "skyId": "AKV"
-    },
-    {
-        "iata": "AKW",
-        "icao": "OIAG",
-        "name": "Aghajari Airport[1]",
-        "location": "Aghajari, Iran",
-        "time": "UTC+03:30",
-        "id": null
     },
     {
         "iata": "AKX",
@@ -1960,22 +1080,6 @@ const airports= [
         "skyId": "ALC"
     },
     {
-        "iata": "ALD",
-        "icao": "SPAR",
-        "name": "Alerta Airport",
-        "location": "Alerta, Peru",
-        "time": "UTC−05:00",
-        "id": null
-    },
-    {
-        "iata": "ALE",
-        "icao": "",
-        "name": "Alpine–Casparis Municipal Airport (FAA: E38)",
-        "location": "Alpine, Texas, United States",
-        "time": "UTC−06:00",
-        "id": null
-    },
-    {
         "iata": "ALF",
         "icao": "ENAT",
         "name": "Alta Airport",
@@ -2012,46 +1116,6 @@ const airports= [
         "skyId": "ALI"
     },
     {
-        "iata": "ALJ",
-        "icao": "FAAB",
-        "name": "Alexander Bay Airport",
-        "location": "Alexander Bay, South Africa",
-        "time": "UTC+02:00",
-        "id": null
-    },
-    {
-        "iata": "ALK",
-        "icao": "",
-        "name": "Asella Airport",
-        "location": "Asella, Ethiopia",
-        "time": "UTC+03:00",
-        "id": null
-    },
-    {
-        "iata": "ALL",
-        "icao": "LIMG",
-        "name": "Albenga Airport",
-        "location": "Albenga, Liguria, Italy",
-        "time": "UTC+01:00",
-        "id": null
-    },
-    {
-        "iata": "ALM",
-        "icao": "KALM",
-        "name": "Alamogordo–White Sands Regional Airport",
-        "location": "Alamogordo, New Mexico, United States",
-        "time": "UTC−07:00",
-        "id": null
-    },
-    {
-        "iata": "ALN",
-        "icao": "KALN",
-        "name": "St. Louis Regional Airport",
-        "location": "Alton, Illinois, United States",
-        "time": "UTC−06:00",
-        "id": null
-    },
-    {
         "iata": "ALO",
         "icao": "KALO",
         "name": "Waterloo Regional Airport",
@@ -2079,14 +1143,6 @@ const airports= [
         "skyId": "ALQ"
     },
     {
-        "iata": "ALR",
-        "icao": "NZLX",
-        "name": "Alexandra Aerodrome",
-        "location": "Alexandra, New Zealand",
-        "time": "UTC+12:00",
-        "id": null
-    },
-    {
         "iata": "ALS",
         "icao": "KALS",
         "name": "San Luis Valley Regional Airport",
@@ -2096,22 +1152,6 @@ const airports= [
         "skyId": "ALS"
     },
     {
-        "iata": "ALT",
-        "icao": "",
-        "name": "Alenquer Airport",
-        "location": "Alenquer, Pará, Brazil",
-        "time": "UTC−03:00",
-        "id": null
-    },
-    {
-        "iata": "ALU",
-        "icao": "HCMA",
-        "name": "Alula Airport",
-        "location": "Alula, Somalia",
-        "time": "UTC+03:00",
-        "id": null
-    },
-    {
         "iata": "ALW",
         "icao": "KALW",
         "name": "Walla Walla Regional Airport",
@@ -2119,14 +1159,6 @@ const airports= [
         "time": "UTC−08:00",
         "id": "eyJlIjoiOTU2NzQzMjUiLCJzIjoiQUxXIiwiaCI6IjM1Mzc1Mjg3IiwidCI6IkFJUlBPUlQifQ==",
         "skyId": "ALW"
-    },
-    {
-        "iata": "ALX",
-        "icao": "KALX",
-        "name": "Thomas C. Russell Field",
-        "location": "Alexander City, Alabama, United States",
-        "time": "UTC−06:00",
-        "id": null
     },
     {
         "iata": "ALY",

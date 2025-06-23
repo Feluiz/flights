@@ -3,9 +3,15 @@ import { TextField, Box, Autocomplete } from "@mui/material";
 import airports from "./assets/airports";
 const apiKey = import.meta.env.VITE_API_KEY;
 
-const Input = () => {
+const Input = ({
+  setOriginAirport,
+  setDestinationAirport,
+  setDepartureDate,
+  setPassengerCount,
+  passengerCount,
+  searchAirport,
+}) => {
   const [inputValue, setInputValue] = useState("");
-  const [passengerCount, setPassengerCount] = useState(1);
 
   const filteredOptions = airports
     .filter((airport) => {
@@ -44,6 +50,7 @@ const Input = () => {
             freeSolo
             options={filteredOptions}
             getOptionLabel={(option) => option.name || ""}
+            onChange={(event, newValue) => setOriginAirport(newValue)}
             onInputChange={(event, newInputValue, reason) => {
               if (reason === "input") {
                 setInputValue(newInputValue);
@@ -87,6 +94,7 @@ const Input = () => {
             freeSolo
             options={filteredOptions}
             getOptionLabel={(option) => option.name || ""}
+            onChange={(event, newValue) => setDestinationAirport(newValue)}
             onInputChange={(event, newInputValue, reason) => {
               if (reason === "input") {
                 setInputValue(newInputValue);
@@ -130,7 +138,7 @@ const Input = () => {
               setPassengerCount(value);
             }}
             sx={{
-              width: { xs: "100%", sm: "45%", md: "45%", lg: "45%" }
+              width: { xs: "100%", sm: "45%", md: "45%", lg: "45%" },
             }}
           />
         </Box>
