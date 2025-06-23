@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { Button } from "@mui/material";
 import Input from "./Input";
 import "./App.css";
@@ -6,7 +6,7 @@ import axios from "axios";
 const apiKey = import.meta.env.VITE_API_KEY;
 
 function App() {
-  const [count, setCount] = useState(0);
+  
 
   const searchAirport = async (query) => {
     try {
@@ -41,13 +41,13 @@ function App() {
             color: "white",
             height: "3.5em",
             fontSize: "larger",
-            width: { lg: "76%", md: "74%", sm: "84%", xs: "10%" },
+            width: { lg: "76%", md: "70%", sm: "93%", xs: "10%" },
           }}
-          onClick={() => searchAirport('new')}
+          onClick={() => searchAirport("new")}
         >
           {" "}
           Search Flights
-        </Button >
+        </Button>
       </div>
     </div>
   );
