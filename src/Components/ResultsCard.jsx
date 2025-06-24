@@ -6,10 +6,24 @@ import {
   CardMedia,
   Button,
 } from "@mui/material";
+import { useState } from "react";
 import flights from "../assets/flights";
+import FlightModal from "./Modal";
 
 const ResultsCard = () => {
   const itineraries = flights[0].data.itineraries;
+  const [selectedFlight, setSelectedFlight] = useState(null);
+  const [open, setOpen] = useState(false);
+
+  const handleOpen = (flight) => {
+    setSelectedFlight(flight);
+    setOpen(true);
+  };
+
+  const handleClose = () => {
+    setOpen(false);
+    setSelectedFlight(null);
+  };
 
   const formatDuration = (minutes) => {
     const hours = Math.floor(minutes / 60);
@@ -29,7 +43,7 @@ const ResultsCard = () => {
         spacing={0}
         sx={{
           p: 0,
-          width: { lg: "80%", md: "70%", sm: "80%", xs: "95%" },
+          width: { lg: "90%", md: "80%", sm: "90%", xs: "100%" },
           mx: "1em",
           bgcolor: "#f5f5f5",
           minHeight: "100vh",
@@ -96,11 +110,11 @@ const ResultsCard = () => {
                   alignItems: "center",
                   gap: 2,
                   overflow: "hidden",
-                  pb:"10px",
-                  width:'100%',
+                  pb: "10px",
+                  width: '100%',
                   justifyContent: 'space-around'
                 }}
-                
+
               >
                 <div className="flex justify-between items-center">
                   <div className="flex md:flex-row flex-col">
@@ -156,6 +170,7 @@ const ResultsCard = () => {
                         bgcolor: "#1a73e8",
                         "&:hover": { bgcolor: "#1557b0" },
                       }}
+                      onClick={() => handleOpen(itinerary)}
                     >
                       Book
                     </Button>
@@ -163,6 +178,16 @@ const ResultsCard = () => {
                 </div>
               </CardContent>
             </Card>
+            {selectedFlight && (
+              <FlightModal
+                open={open}
+                handleClose={handleClose}
+                flight={{
+                  ...selectedFlight.legs[0],
+                  price: selectedFlight.price,
+                }}
+              />
+            )}
           </Grid>
         ))}
       </Grid>

@@ -4,6 +4,7 @@ import Input from "./Components/Input";
 import "./App.css";
 import axios from "axios";
 const apiKey = import.meta.env.VITE_API_KEY;
+import TopNav from "./Components/Appbar";
 //trycatch
 import ResultsCard from "./Components/ResultsCard";
 
@@ -95,7 +96,8 @@ function App() {
              lg:min-w-[60%]
              xl:w-[60%]"
     >
-      <h1
+      <TopNav />
+      {/* <h1
         className="text-6xl my-15 break-words mx-auto
              w-[50%]
              sm:w-[60%]
@@ -104,7 +106,7 @@ function App() {
              xl:w-1/2"
       >
         Flight Search-inator
-      </h1>
+      </h1> */}
       <div
         className="flex justify-center flex-wrap items-center w-[95%]
              sm:w-[100%]
