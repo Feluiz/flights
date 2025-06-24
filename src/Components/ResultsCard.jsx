@@ -43,7 +43,7 @@ const ResultsCard = () => {
         spacing={0}
         sx={{
           p: 0,
-          width: { lg: "90%", md: "80%", sm: "90%", xs: "100%" },
+          width: { xl: "100%", lg: "100%", md: "90%", sm: "100%", xs: "100%" },
           mx: "1em",
           bgcolor: "#f5f5f5",
           minHeight: "100vh",
@@ -62,7 +62,7 @@ const ResultsCard = () => {
                 xs: "100%",
                 border: "1px solid #D3D3D3",
                 display: "flex",
-                alignItems: "center",
+                placeContent: "center",
               },
             }}
           >
@@ -74,8 +74,6 @@ const ResultsCard = () => {
                   sm: "100%",
                   xs: "100%",
                   border: "1px solid #D3D3D3",
-                  display: "flex",
-                  alignItems: "center",
                 },
                 height: {
                   lg: "7rem",
@@ -118,6 +116,19 @@ const ResultsCard = () => {
               >
                 <div className="flex justify-between items-center">
                   <div className="flex md:flex-row flex-col">
+                    <Typography
+                      variant="body1"
+                      sx={{
+                        fontWeight: "medium",
+                        color: "#333",
+                        minWidth: "150px",
+                        whiteSpace: "nowrap",
+                        display: "flex",
+                        justifyContent: "center",
+                      }}
+                    >
+                      {itinerary.legs[0].carriers.marketing[0].name}
+                    </Typography>
                     <Typography
                       variant="body1"
                       sx={{
