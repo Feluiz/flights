@@ -94,7 +94,7 @@ function App() {
              sm:min-w-[40%]
              md:min-w-[50%]
              lg:min-w-[60%]
-             xl:w-[60%]"
+             xl:w-[70%]"
     >
       <TopNav />
       {/* <h1

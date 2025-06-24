@@ -40,10 +40,9 @@ const ResultsCard = () => {
     <>
       <Grid
         container
-        spacing={0}
         sx={{
           p: 0,
-          width: { xl: "100%", lg: "100%", md: "90%", sm: "100%", xs: "100%" },
+          width: { xl: "100%", lg: "100%", md: "100%", sm: "100%", xs: "100%" },
           mx: "1em",
           bgcolor: "#f5f5f5",
           minHeight: "100vh",
@@ -125,6 +124,7 @@ const ResultsCard = () => {
                         whiteSpace: "nowrap",
                         display: "flex",
                         justifyContent: "center",
+                        flexWrap: "wrap",
                       }}
                     >
                       {itinerary.legs[0].carriers.marketing[0].name}
