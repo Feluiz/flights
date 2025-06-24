@@ -1,9 +1,11 @@
 import { useEffect, useState } from "react";
 import { Button } from "@mui/material";
-import Input from "./Input";
+import Input from "./Components/Input";
 import "./App.css";
 import axios from "axios";
 const apiKey = import.meta.env.VITE_API_KEY;
+//trycatch
+import ResultsCard from "./Components/ResultsCard";
 
 function App() {
   const [originAirport, setOriginAirport] = useState(null);
@@ -45,14 +47,12 @@ function App() {
       destinationSkyId: destinationAirport?.skyId || undefined,
       departureDate: departureDate || undefined,
       adults: passengerCount,
-      // Optional params (uncomment and adjust as needed)
       // stops: 'direct,1stop',
       // cabinClass: 'economy',
       // sort: 'cheapest',
       // market: 'US', // Fetch from /get-config
       // locale: 'en-US', // Fetch from /get-config
       // currency: 'USD', // Fetch from /get-config
-      // carriersIds: '-32672,-31435', // Example
     };
 
     try {
@@ -88,10 +88,31 @@ function App() {
   };
 
   return (
-    <div className="flex flex-wrap justify-center">
-      <h1 className="text-6xl my-15">Flight Search</h1>
-      <div className="flex justify-center max-auto flex-wrap">
-        <Input
+    <div
+      className="justify-center grid place-items-center col-auto w-[100%]
+             sm:min-w-[40%]
+             md:min-w-[50%]
+             lg:min-w-[60%]
+             xl:w-[60%]"
+    >
+      <h1
+        className="text-6xl my-15 break-words mx-auto
+             w-[50%]
+             sm:w-[60%]
+             md:w-2/3
+             lg:w-2/3
+             xl:w-1/2"
+      >
+        Flight Search-inator
+      </h1>
+      <div
+        className="flex justify-center flex-wrap items-center w-[95%]
+             sm:w-[100%]
+             md:w-[100%]
+             lg:w-[100%]
+             xl:w-[100%]"
+      >
+        {/* <Input
           setOriginAirport={setOriginAirport}
           setDestinationAirport={setDestinationAirport}
           setDepartureDate={setDepartureDate}
@@ -112,7 +133,8 @@ function App() {
         >
           {" "}
           Search Flights
-        </Button>
+        </Button> */}
+        <ResultsCard />
       </div>
     </div>
   );

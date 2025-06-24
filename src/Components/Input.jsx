@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 import { TextField, Box, Autocomplete } from "@mui/material";
-import airports from "./assets/airports";
+import airports from "../assets/airports";
 const apiKey = import.meta.env.VITE_API_KEY;
 
 const Input = ({
