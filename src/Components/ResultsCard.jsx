@@ -7,11 +7,10 @@ import {
   Button,
 } from "@mui/material";
 import { useState } from "react";
-import flights from "../assets/flights";
 import FlightModal from "./Modal";
 
-const ResultsCard = () => {
-  const itineraries = flights[0].data.itineraries;
+const ResultsCard = ({ itinerariesData }) => {
+  const itineraries = itinerariesData.data.itineraries;
   const [selectedFlight, setSelectedFlight] = useState(null);
   const [open, setOpen] = useState(false);
 
@@ -42,12 +41,13 @@ const ResultsCard = () => {
         container
         sx={{
           p: 0,
-          width: { xl: "100%", lg: "100%", md: "100%", sm: "100%", xs: "100%" },
+          width: { xl: "90%", lg: "100%", md: "100%", sm: "100%", xs: "100%" },
           mx: "1em",
           bgcolor: "#f5f5f5",
           minHeight: "100vh",
           display: "flex",
           alignItems: "center",
+          justifyContent: "center",
         }}
       >
         {itineraries.map((itinerary) => (
@@ -108,10 +108,9 @@ const ResultsCard = () => {
                   gap: 2,
                   overflow: "hidden",
                   pb: "10px",
-                  width: '100%',
-                  justifyContent: 'space-around'
+                  width: "100%",
+                  justifyContent: "space-around",
                 }}
-
               >
                 <div className="flex justify-between items-center">
                   <div className="flex md:flex-row flex-col">

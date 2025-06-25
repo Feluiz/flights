@@ -71,7 +71,6 @@ function App() {
         setItinerariesData([]);
       }
       setItinerariesData(response.data);
-      console.log("Flight search results:", itinerariesData);
       setIsOpen(true);
     } catch (error) {
       console.error("Flight search error:", error);
@@ -82,7 +81,8 @@ function App() {
   };
 
   return (
-    <div>
+    <div className="flex justify-center">
+      <TopNav />
       {!isOpen ? (
         <div
           className="justify-center grid place-items-center col-auto w-[100%]
@@ -90,20 +90,9 @@ function App() {
              md:min-w-[50%]
              lg:min-w-[60%]
              xl:w-[70%]"
-    >
-      <TopNav />
-      {/* <h1
-        className="text-6xl my-15 break-words mx-auto
-             w-[50%]
-             sm:w-[60%]
-             md:w-2/3
-             lg:w-2/3
-             xl:w-1/2"
-      >
-        Flight Search-inator
-      </h1> */}
-      <div
-        className="flex justify-center flex-wrap items-center w-[95%]
+        >
+          <div
+            className="flex justify-center flex-wrap items-center w-[95%]
              sm:w-[100%]
              md:w-[100%]
              lg:w-[100%]
@@ -125,6 +114,7 @@ function App() {
                 height: "3.5em",
                 fontSize: "larger",
                 width: { lg: "76%", md: "70%", sm: "93%", xs: "10%" },
+                cursor: "pointer"
               }}
               onClick={handleSearch}
             >

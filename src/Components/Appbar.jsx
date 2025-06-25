@@ -6,8 +6,7 @@ import {
     IconButton,
     Box,
     useMediaQuery,
-    useTheme,
-    Button
+    useTheme
 } from '@mui/material';
 import MenuIcon from '@mui/icons-material/Menu';
 
@@ -28,7 +27,7 @@ const TopNav = () => {
                     justifyContent: 'space-between',
                 }}
             >
-                <Typography variant="h6" noWrap onClick={() => window.location.reload(true)}>
+                <Typography variant="h6" noWrap onClick={() => window.location.reload(true)} sx={{cursor: "pointer"}}>
                     Flight Search-inator
                 </Typography>
 
