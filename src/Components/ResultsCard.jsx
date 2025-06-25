@@ -6,10 +6,24 @@ import {
   CardMedia,
   Button,
 } from "@mui/material";
-// import flights from "../assets/flights";
+import { useState } from "react";
+import flights from "../assets/flights";
+import FlightModal from "./Modal";
 
-const ResultsCard = ({ itinerariesData }) => {
-const itineraries = itinerariesData.data.itineraries;
+const ResultsCard = () => {
+  const itineraries = flights[0].data.itineraries;
+  const [selectedFlight, setSelectedFlight] = useState(null);
+  const [open, setOpen] = useState(false);
+
+  const handleOpen = (flight) => {
+    setSelectedFlight(flight);
+    setOpen(true);
+  };
+
+  const handleClose = () => {
+    setOpen(false);
+    setSelectedFlight(null);
+  };
 
   const formatDuration = (minutes) => {
     const hours = Math.floor(minutes / 60);
@@ -26,10 +40,9 @@ const itineraries = itinerariesData.data.itineraries;
     <>
       <Grid
         container
-        spacing={0}
         sx={{
           p: 0,
-          width: { lg: "80%", md: "70%", sm: "80%", xs: "95%" },
+          width: { xl: "100%", lg: "100%", md: "100%", sm: "100%", xs: "100%" },
           mx: "1em",
           bgcolor: "#f5f5f5",
           minHeight: "100vh",
@@ -48,7 +61,7 @@ const itineraries = itinerariesData.data.itineraries;
                 xs: "100%",
                 border: "1px solid #D3D3D3",
                 display: "flex",
-                alignItems: "center",
+                placeContent: "center",
               },
             }}
           >
@@ -60,8 +73,6 @@ const itineraries = itinerariesData.data.itineraries;
                   sm: "100%",
                   xs: "100%",
                   border: "1px solid #D3D3D3",
-                  display: "flex",
-                  alignItems: "center",
                 },
                 height: {
                   lg: "7rem",
@@ -96,14 +107,28 @@ const itineraries = itinerariesData.data.itineraries;
                   alignItems: "center",
                   gap: 2,
                   overflow: "hidden",
-                  pb:"10px",
-                  width:'100%',
+                  pb: "10px",
+                  width: '100%',
                   justifyContent: 'space-around'
                 }}
-                
+
               >
                 <div className="flex justify-between items-center">
                   <div className="flex md:flex-row flex-col">
+                    <Typography
+                      variant="body1"
+                      sx={{
+                        fontWeight: "medium",
+                        color: "#333",
+                        minWidth: "150px",
+                        whiteSpace: "nowrap",
+                        display: "flex",
+                        justifyContent: "center",
+                        flexWrap: "wrap",
+                      }}
+                    >
+                      {itinerary.legs[0].carriers.marketing[0].name}
+                    </Typography>
                     <Typography
                       variant="body1"
                       sx={{
@@ -156,6 +181,7 @@ const itineraries = itinerariesData.data.itineraries;
                         bgcolor: "#1a73e8",
                         "&:hover": { bgcolor: "#1557b0" },
                       }}
+                      onClick={() => handleOpen(itinerary)}
                     >
                       Book
                     </Button>
@@ -163,6 +189,16 @@ const itineraries = itinerariesData.data.itineraries;
                 </div>
               </CardContent>
             </Card>
+            {selectedFlight && (
+              <FlightModal
+                open={open}
+                handleClose={handleClose}
+                flight={{
+                  ...selectedFlight.legs[0],
+                  price: selectedFlight.price,
+                }}
+              />
+            )}
           </Grid>
         ))}
       </Grid>

@@ -4,6 +4,8 @@ import Input from "./Components/Input";
 import "./App.css";
 import axios from "axios";
 const apiKey = import.meta.env.VITE_API_KEY;
+import TopNav from "./Components/Appbar";
+//trycatch
 import ResultsCard from "./Components/ResultsCard";
 
 function App() {
@@ -87,20 +89,21 @@ function App() {
              sm:min-w-[40%]
              md:min-w-[50%]
              lg:min-w-[60%]
-             xl:w-[60%]"
-        >
-          <h1
-            className="text-6xl my-15 break-words mx-auto
+             xl:w-[70%]"
+    >
+      <TopNav />
+      {/* <h1
+        className="text-6xl my-15 break-words mx-auto
              w-[50%]
              sm:w-[60%]
              md:w-2/3
              lg:w-2/3
              xl:w-1/2"
-          >
-            Flight Search-inator
-          </h1>
-          <div
-            className="flex justify-center flex-wrap items-center w-[95%]
+      >
+        Flight Search-inator
+      </h1> */}
+      <div
+        className="flex justify-center flex-wrap items-center w-[95%]
              sm:w-[100%]
              md:w-[100%]
              lg:w-[100%]
