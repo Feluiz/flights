@@ -6,10 +6,10 @@ import {
   CardMedia,
   Button,
 } from "@mui/material";
-import flights from "../assets/flights";
+// import flights from "../assets/flights";
 
-const ResultsCard = () => {
-  const itineraries = flights[0].data.itineraries;
+const ResultsCard = ({ itinerariesData }) => {
+const itineraries = itinerariesData.data.itineraries;
 
   const formatDuration = (minutes) => {
     const hours = Math.floor(minutes / 60);

@@ -4,7 +4,6 @@ import Input from "./Components/Input";
 import "./App.css";
 import axios from "axios";
 const apiKey = import.meta.env.VITE_API_KEY;
-//trycatch
 import ResultsCard from "./Components/ResultsCard";
 
 function App() {
@@ -13,6 +12,8 @@ function App() {
   const [destinationAirport, setDestinationAirport] = useState(null);
   const [departureDate, setDepartureDate] = useState("");
   const [loading, setLoading] = useState(false);
+  const [itinerariesData, setItinerariesData] = useState([]);
+  const [isOpen, setIsOpen] = useState(false);
   const searchAirport = async (query) => {
     try {
       const response = await axios.get(
@@ -41,18 +42,11 @@ function App() {
     }
 
     setLoading(true);
-    const apiKey = import.meta.env.VITE_API_KEY;
     const params = {
       originSkyId: originAirport.skyId,
       destinationSkyId: destinationAirport?.skyId || undefined,
       departureDate: departureDate || undefined,
       adults: passengerCount,
-      // stops: 'direct,1stop',
-      // cabinClass: 'economy',
-      // sort: 'cheapest',
-      // market: 'US', // Fetch from /get-config
-      // locale: 'en-US', // Fetch from /get-config
-      // currency: 'USD', // Fetch from /get-config
     };
 
     try {
@@ -67,18 +61,16 @@ function App() {
         }
       );
 
-      while (response.data?.context?.status === "incomplete") {
-        await new Promise((resolve) => setTimeout(resolve, 1000));
-        response = await axios.get(
-          "https://api.example.com/flight/search-incomplete",
-          {
-            params: { ...params, sessionId: response.data.context.sessionId },
-            headers: { Authorization: `Bearer ${apiKey}` },
-          }
-        );
+      const itineraries2 = response?.data?.itineraries;
+      if (itineraries2) {
+        console.log("Flight search results:", response.data);
+      } else {
+        console.warn("No itineraries returned.");
+        setItinerariesData([]);
       }
-
-      console.log("Flight search results:", response.data);
+      setItinerariesData(response.data);
+      console.log("Flight search results:", itinerariesData);
+      setIsOpen(true);
     } catch (error) {
       console.error("Flight search error:", error);
       alert("Failed to fetch flights");
@@ -88,54 +80,60 @@ function App() {
   };
 
   return (
-    <div
-      className="justify-center grid place-items-center col-auto w-[100%]
+    <div>
+      {!isOpen ? (
+        <div
+          className="justify-center grid place-items-center col-auto w-[100%]
              sm:min-w-[40%]
              md:min-w-[50%]
              lg:min-w-[60%]
              xl:w-[60%]"
-    >
-      <h1
-        className="text-6xl my-15 break-words mx-auto
+        >
+          <h1
+            className="text-6xl my-15 break-words mx-auto
              w-[50%]
              sm:w-[60%]
              md:w-2/3
              lg:w-2/3
              xl:w-1/2"
-      >
-        Flight Search-inator
-      </h1>
-      <div
-        className="flex justify-center flex-wrap items-center w-[95%]
+          >
+            Flight Search-inator
+          </h1>
+          <div
+            className="flex justify-center flex-wrap items-center w-[95%]
              sm:w-[100%]
              md:w-[100%]
              lg:w-[100%]
              xl:w-[100%]"
-      >
-        {/* <Input
-          setOriginAirport={setOriginAirport}
-          setDestinationAirport={setDestinationAirport}
-          setDepartureDate={setDepartureDate}
-          setPassengerCount={setPassengerCount}
-          passengerCount={passengerCount}
-          searchAirport={searchAirport}
-        />
-        <Button
-          sx={{
-            minWidth: "56.5%",
-            background: "#1e6bf2",
-            color: "white",
-            height: "3.5em",
-            fontSize: "larger",
-            width: { lg: "76%", md: "70%", sm: "93%", xs: "10%" },
-          }}
-          onClick={handleSearch}
-        >
-          {" "}
-          Search Flights
-        </Button> */}
-        <ResultsCard />
-      </div>
+          >
+            <Input
+              setOriginAirport={setOriginAirport}
+              setDestinationAirport={setDestinationAirport}
+              setDepartureDate={setDepartureDate}
+              setPassengerCount={setPassengerCount}
+              passengerCount={passengerCount}
+              searchAirport={searchAirport}
+            />
+            <Button
+              sx={{
+                minWidth: "56.5%",
+                background: "#1e6bf2",
+                color: "white",
+                height: "3.5em",
+                fontSize: "larger",
+                width: { lg: "76%", md: "70%", sm: "93%", xs: "10%" },
+              }}
+              onClick={handleSearch}
+            >
+              {" "}
+              Search Flights
+            </Button>
+            {isOpen && <ResultsCard itinerariesData={itinerariesData} />}
+          </div>
+        </div>
+      ) : (
+        <ResultsCard itinerariesData={itinerariesData} />
+      )}
     </div>
   );
 }
