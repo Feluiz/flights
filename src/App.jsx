@@ -16,6 +16,7 @@ function App() {
   const [loading, setLoading] = useState(false);
   const [itinerariesData, setItinerariesData] = useState([]);
   const [isOpen, setIsOpen] = useState(false);
+  
   const searchAirport = async (query) => {
     try {
       const response = await axios.get(
@@ -68,7 +69,7 @@ function App() {
         console.log("Flight search results:", response.data);
       } else {
         console.warn("No itineraries returned.");
-        setItinerariesData([]);
+        // setItinerariesData([]);
       }
       setItinerariesData(response.data);
       setIsOpen(true);

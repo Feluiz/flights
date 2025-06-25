@@ -10,6 +10,7 @@ import { useState } from "react";
 import FlightModal from "./Modal";
 
 const ResultsCard = ({ itinerariesData }) => {
+  console.log(itinerariesData)
   const itineraries = itinerariesData.data.itineraries;
   const [selectedFlight, setSelectedFlight] = useState(null);
   const [open, setOpen] = useState(false);

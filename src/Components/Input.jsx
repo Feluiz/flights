@@ -1,4 +1,4 @@
-import { useState, useEffect } from "react";
+import { useState } from "react";
 import { TextField, Box, Autocomplete } from "@mui/material";
 import airports from "../assets/airports";
 const apiKey = import.meta.env.VITE_API_KEY;
