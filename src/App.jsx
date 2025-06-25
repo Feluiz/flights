@@ -67,8 +67,8 @@ function App() {
       if (itineraries2) {
         console.log("Flight search results:", response.data);
       } else {
-        alert("No itineraries returned.");
-        window.location.reload(true)
+        console.warn("No itineraries returned.");
+        setItinerariesData([]);
       }
       setItinerariesData(response.data);
       setIsOpen(true);
